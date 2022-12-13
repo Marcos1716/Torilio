@@ -1,0 +1,60 @@
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(four-hundred) {
+    & > * {
+      flex: 1;
+    }
+  }
+}
+
+.logo-box {
+  &__logo {
+    height: 4rem;
+    margin-left: 2rem;
+
+    @include respond(four-hundred) {
+      height: 3rem;
+    }
+  }
+}
+
+.search-box {
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 20%;
+  cursor: pointer;
+
+  &__icon {
+    font-size: 3rem;
+    color: var(--color-grey-dark-2);
+    display: none;
+
+    @include respond(four-hundred) {
+      display: block;
+    }
+  }
+}
+// copy rights
+.copy-rights {
+  font-size: 1.5rem;
+  color: var(--color-grey-dark-3);
+  text-align: center;
+
+  @include respond(nine-hundred) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-grey-dark-1);
+    padding: 2rem 0;
+  }
+}

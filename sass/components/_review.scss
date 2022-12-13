@@ -1,0 +1,61 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__container {
+    overflow: hidden;
+    position: relative;
+    padding: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: -10rem;
+      left: 1rem;
+      font-size: 20rem;
+      color: var(--color-grey-light-2);
+    }
+  }
+
+  &__text {
+    margin-bottom: 1.5rem;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+  &__name {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  &__date {
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rate {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  &__img {
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__button-container {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}

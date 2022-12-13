@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  background-color: var(--color-grey-light-2);
+
+  // media queries
+  @include respond(nine-hundred) {
+    flex-direction: column;
+    position: relative;
+  }
+}

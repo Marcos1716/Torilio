@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Trilio app</title>
+  </head>
+  <body>
+    <div class="search-mobile"></div>
+    <div class="box">
+      <div class="container">
+        <header class="header">
+          <!-- img -->
+          <div class="logo-box">
+            <img src="img/logo.png" alt="logo" class="logo-box__logo" />
+          </div>
+
+          <button class="search-box">
+            <ion-icon name="search" class="search-box__icon"></ion-icon>
+          </button>
+          <!-- search -->
+          <form action="#" class="search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search"
+              id="search"
+            />
+
+            <button class="search__button">
+              <ion-icon name="search" class="search__icon"></ion-icon>
+            </button>
+          </form>
+
+          <!-- User Navigation -->
+
+          <div class="user-nav">
+            <!-- 1 -->
+            <div class="user-nav__icon-box">
+              <ion-icon name="bookmark" class="user-nav__icon"></ion-icon>
+              <span class="user-nav__notif">7</span>
+            </div>
+
+            <!-- 2 -->
+            <div class="user-nav__icon-box">
+              <ion-icon name="chatboxes" class="user-nav__icon"></ion-icon>
+              <span class="user-nav__notif">13</span>
+            </div>
+
+            <!-- 3 -->
+            <div class="user-nav__icon-box">
+              <div class="user-nav__box">
+                <img
+                  src="img/user.jpg"
+                  alt="photo of the user"
+                  class="user-nav__img"
+                />
+                <p class="user-nav__name">Marcos</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <nav class="sidebar-nav">
+            <ul class="sidebar-nav__list">
+              <!-- 1 -->
+              <li class="sidebar-nav__item sidebar-nav__item--active">
+                <a href="#" class="sidebar-nav__link"
+                  ><ion-icon name="home" class="sidebar-nav__icon"></ion-icon>
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <!-- 2 -->
+              <li class="sidebar-nav__item">
+                <a href="#" class="sidebar-nav__link"
+                  ><ion-icon
+                    name="airplane"
+                    class="sidebar-nav__icon"
+                  ></ion-icon>
+                  <span>Flight</span>
+                </a>
+              </li>
+
+              <!-- 3 -->
+              <li class="sidebar-nav__item">
+                <a href="#" class="sidebar-nav__link"
+                  ><ion-icon name="car" class="sidebar-nav__icon"></ion-icon>
+                  <span>Car rental</span>
+                </a>
+              </li>
+
+              <!-- 4 -->
+              <li class="sidebar-nav__item">
+                <a href="#" class="sidebar-nav__link"
+                  ><ion-icon name="map" class="sidebar-nav__icon"></ion-icon>
+                  <span>Tours</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="copy-rights">
+              &copy;
+              <span class="year">2017 </span>
+              by trillo. All rights reserved.
+            </div>
+          </nav>
+
+          <main class="hotel-view">
+            <!-- 1 -->
+            <div class="gallery">
+              <figure>
+                <img
+                  src="img/hotel-1.jpg"
+                  alt="photo of a hotel"
+                  class="gallery__img"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="img/hotel-2.jpg"
+                  alt="photo of a hotel"
+                  class="gallery__img"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="img/hotel-3.jpg"
+                  alt="photo of a hotel"
+                  class="gallery__img"
+                />
+              </figure>
+            </div>
+
+            <div class="overview">
+              <h1 class="overview__heading">Hotel Pal mas</h1>
+
+              <div class="overview__star">
+                <ion-icon name="star" class="overview__star-icon"></ion-icon>
+                <ion-icon name="star" class="overview__star-icon"></ion-icon>
+                <ion-icon name="star" class="overview__star-icon"></ion-icon>
+                <ion-icon name="star" class="overview__star-icon"></ion-icon>
+                <ion-icon name="star" class="overview__star-icon"></ion-icon>
+              </div>
+
+              <div class="overview__location">
+                <ion-icon name="pin" class="overview__location-icon"></ion-icon>
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g298573-d306357-Reviews-Bayview_Park_Hotel_Manila-Manila_Metro_Manila_Luzon.html"
+                  class="btn-inline"
+                  >Tondo, Manila</a
+                >
+              </div>
+              <div class="overview__average">
+                <p class="overview__rate">8.6</p>
+                <p class="overview__count">429 votes</p>
+              </div>
+            </div>
+
+            <!-- HOTEL DETAILS -->
+            <div class="hotel-details">
+              <div class="detail">
+                <div class="detail__text-box">
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quis maxime necessitatibus fugit! Sit ipsam perferendis esse
+                    doloremque laudantium? Fugit expedita sit quis quidem
+                    laudantium nobis perspiciatis, ullam voluptas aliquid!
+                    Autem.
+                  </p>
+
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quis maxime necessitatibus fugit! Sit ipsam perferendis esse
+                    doloremque laudantium? Fugit expedita sit quis quidem
+                    laudantium nobis perspiciatis, ullam voluptas aliquid!
+                    Autem.
+                  </p>
+                </div>
+
+                <ul class="detail__list">
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span> Close to the beach</span>
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span> Breakfast included</span>
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span> Free airport</span>
+                    shuttle
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span>Free wifi in all rooms</span>
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span>Air conditioning and heating</span>
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span>Pets allowed</span>
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span> We speak all languages</span>
+                  </li>
+                  <li class="detail__item">
+                    <ion-icon
+                      name="ios-arrow-forward"
+                      class="detail__icon"
+                    ></ion-icon>
+                    <span> Perfect for families</span>
+                  </li>
+                </ul>
+
+                <!-- recommend -->
+
+                <div class="recommend">
+                  <p class="recommend__text">
+                    Lucy and 3 other friends recommend this hotel.
+                  </p>
+
+                  <div class="recommend__photos">
+                    <img
+                      src="img/user-1.jpg"
+                      alt="photo of a user"
+                      class="recommend__img"
+                    />
+                    <img
+                      src="img/user-2.jpg"
+                      alt="photo of a user"
+                      class="recommend__img"
+                    />
+                    <img
+                      src="img/user-3.jpg"
+                      alt="photo of a user"
+                      class="recommend__img"
+                    />
+                    <img
+                      src="img/user-4.jpg"
+                      alt="photo of a user"
+                      class="recommend__img"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="review">
+                <!-- 1 -->
+                <figure class="review__container">
+                  <blockquote class="review__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi laborum repellendus sequi dignissimos unde officiis
+                    molestias sapiente sunt illum nam?
+                  </blockquote>
+
+                  <figcaption class="review__box">
+                    <img
+                      src="img/user-1.jpg"
+                      alt="photo of a person "
+                      class="review__img"
+                    />
+                    <div class="review__user-box">
+                      <p class="review__name">Junivincris</p>
+                      <p class="review__date">Dec. 12 2022</p>
+                    </div>
+                    <p class="review__rate">9.9</p>
+                  </figcaption>
+                </figure>
+
+                <!-- 2 -->
+                <figure class="review__container">
+                  <blockquote class="review__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi laborum repellendus sequi dignissimos unde officiis
+                    molestias sapiente sunt illum nam?
+                  </blockquote>
+
+                  <figcaption class="review__box">
+                    <img
+                      src="img/user-4.jpg"
+                      alt="photo of a person "
+                      class="review__img"
+                    />
+                    <div class="review__user-box">
+                      <p class="review__name">Jade Gobrin</p>
+                      <p class="review__date">Dec. 9 2022</p>
+                    </div>
+                    <p class="review__rate">9.8</p>
+                  </figcaption>
+                </figure>
+
+                <div class="review__button-container">
+                  <a href="#" class="btn-inline">See all <span>&rarr;</span></a>
+                </div>
+                <!-- end -->
+              </div>
+            </div>
+
+            <div class="cta">
+              <h2 class="cta__heading">
+                GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
+              </h2>
+
+              <a href="#" class="btn">
+                <p class="btn__invisible">Enjoy our hotels</p>
+                <p class="btn__visible">Book now!</p>
+              </a>
+            </div>
+            <!-- end -->
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

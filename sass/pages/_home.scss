@@ -1,0 +1,118 @@
+.hotel-view {
+  flex: 1;
+}
+
+// HOTEL DETAILS
+.hotel-details {
+  padding: 3rem;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.4rem;
+
+  @include respond(seven-hundred) {
+    flex-direction: column;
+  }
+
+  @include respond(four-hundred) {
+    padding: 1.5rem;
+  }
+}
+
+.detail {
+  flex: 0 0 60%;
+
+  padding: 3rem;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-light);
+
+  &__text-box {
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    padding: 3rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    // column-count: 2;
+
+    border-top: var(--line);
+    border-bottom: var(--line);
+
+    @include respond(desktop-small) {
+      padding: 1rem;
+    }
+
+    // queries
+    @include respond(four-hundred) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    width: 50%;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    // queries
+    @include respond(four-hundred) {
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    color: var(--color-primary);
+  }
+
+  // queries
+  @include respond(four-hundred) {
+    padding: 1.5rem;
+  }
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    color: var(--color-grey-dark-3);
+  }
+
+  &__img {
+    display: inline-block;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    &:not(:last-of-type) {
+      margin-right: -1.5rem;
+    }
+  }
+
+  // queries
+  @include respond(four-hundred) {
+    flex-direction: column;
+  }
+}
+
+.cta {
+  padding: 4rem;
+  text-align: center;
+
+  @include respond(nine-hundred) {
+    margin-bottom: 5rem;
+  }
+
+  &__heading {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+
+    @include respond(seven-hundred) {
+      font-size: 1.8rem;
+    }
+  }
+}
